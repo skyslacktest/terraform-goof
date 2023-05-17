@@ -126,3 +126,7 @@ resource "aws_s3_bucket_public_access_block" "snyk_private" {
   block_public_acls   = true
   block_public_policy = true
 }
+
+resource "aws_s3_bucket" "bucket-with-acl-issue" {
+  bucket = "snyk-public-${var.environment}-demo2"
+}  
