@@ -130,3 +130,7 @@ resource "aws_s3_bucket_public_access_block" "snyk_private" {
 resource "aws_s3_bucket" "bucket-with-acl-issue" {
   bucket = "snyk-public-${var.environment}-demo2"
 }  
+
+resource "aws_s3_bucket" "bucket-with-acl-issue3" {
+  bucket = "snyk-public-${var.environment}-demo3"
+}
